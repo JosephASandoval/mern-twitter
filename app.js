@@ -29,11 +29,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  // const user = new User({
-  //   handle: "jim",
-  //   email: "jim@gmail.com",
-  //   password: "password",
-  // });
   user.save();
   res.send("Hello World!!");
 });
